@@ -1,0 +1,17 @@
+# 默认配置
+server:
+  port: 9380
+  servlet:
+    context-path: /log
+spring:
+  application:
+    name: log-service
+  profiles:
+    active: dev
+
+
+# 监控
+javamelody:
+  enabled: true
+  init-parameters:
+    log: true
