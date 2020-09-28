@@ -1,9 +1,15 @@
 # *****************************开发环境*****************************
 
+# mongodb
+spring:
+  data:
+    mongodb:
+      host: 127.0.0.1
+      port: 27017
+      database: logs_dev
+
 # 日志级别
 logging:
   level:
-    com:
-      leeyom:
-        log:
-          mapper: debug
+    com.leeyom.log.mapper: debug
+    org.springframework.data.mongodb.core: debug
